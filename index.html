@@ -14,20 +14,28 @@
   <body>
     <!--heading and paragraph for start page-->
 
-    <h1>Can You Pass The Ultimate Friends Quiz?</h1>
-    <p>
-      The average fan may know the lyrics to Phoebe's <em>"Smelly Cat"</em> or
-      what the color of the couch is in Central Park, but only a die-hard stan
-      remembers how many sisters Joey has or when Chandler's birthday is.
-    </p>
-    <p>
-      Lets see if you are a true fan or not! Press the start button to get
-      started.
-    </p>
-    <div class="container"></div>
-    <div id="question-container" class="hide"></div>
-    <div class="controls">
-      <button id="start-button" class="start-btn btn">Start</button>
+    <div class="container">
+      <h1>Can You Pass The Ultimate Movie and Series Quiz?</h1>
+      <p>
+        The average fan may know the lyrics to Phoebe's <em>"Smelly Cat"</em> or
+        what the first ever Pixar film was, would you know the year though? Now
+        is the time to test your knowledge. The rules are simple, just answer if
+        the questions are true or false, but NO cheating! You can't ask our
+        trusty friend Google!
+      </p>
+      <p>Hit the start button to begin! Good luck.</p>
+
+      <!--start button and true and false buttons-->
+
+      <div id="question-container" class="hide"></div>
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid"></div>
+      <button class="btn">Answer 1</button>
+      <button class="btn">Answer 1</button>
+      <div class="controls">
+        <button id="start-button" class="start-btn btn">Start</button>
+        <button id="start-button" class="start-btn btn">Next</button>
+      </div>
     </div>
 
     <script src="assets/js/script.js"></script>
