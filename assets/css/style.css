@@ -31,3 +31,22 @@ p {
     padding: 1%;
     border-radius: 10px;
 }
+
+.btn {
+    display: inline-block;
+    column-gap: 50px;
+    grid-columns: 2;
+    padding: 10px;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+}
