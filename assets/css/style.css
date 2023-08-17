@@ -37,6 +37,7 @@ p {
     column-gap: 50px;
     grid-columns: 2;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .btn:hover {
