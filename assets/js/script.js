@@ -1,8 +1,8 @@
-let startButton = document.getElementById("start-btn"); // should these be 'const' - ask Mentor
+const startButton = document.getElementById("start-btn");
 startButton.addEventListener("click", startGame);
 const questionContainerElement = document.getElementById('question-container');
 
-const shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
 function startGame() {
     console.log("Started");
