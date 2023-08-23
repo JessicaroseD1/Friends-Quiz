@@ -1,9 +1,14 @@
-let startButton = document.getElementById("start-btn");
+let startButton = document.getElementById("start-btn"); // should these be 'const' - ask Mentor
 startButton.addEventListener("click", startGame);
+const questionContainerElement = document.getElementById('question-container');
+
+const shuffledQuestions, currentQuestionIndex
 
 function startGame() {
     console.log("Started");
     startButton.classList.add('hide');
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
 }
 
 function setNextQuestion() {
@@ -41,62 +46,65 @@ const questions = [
     },
     {
         question: 'In the film Mean Girls, what day do they wear pink?',
-        answers: [{
-            text: 'wednesday',
-            correct: true
-        },
-        {
-            text: 'monday',
-            correct: false
-        },
-        {
-            text: 'thursday',
-            correct: false
-        },
-        {
-            text: 'friday',
-            correct: false
-        }
+        answers: [
+            {
+                text: 'wednesday',
+                correct: true
+            },
+            {
+                text: 'monday',
+                correct: false
+            },
+            {
+                text: 'thursday',
+                correct: false
+            },
+            {
+                text: 'friday',
+                correct: false
+            }
         ]
     },
     {
         question: 'What DC movie was shockingly canceled by Warner Bros. in 2022?',
-        answers: [{
-            text: 'batgirl',
-            correct: true
-        },
-        {
-            text: 'batman',
-            correct: false
-        },
-        {
-            text: 'batman',
-            correct: false
-        },
-        {
-            text: 'venom',
-            correct: false
-        },
+        answers: [
+            {
+                text: 'batgirl',
+                correct: true
+            },
+            {
+                text: 'batman',
+                correct: false
+            },
+            {
+                text: 'batman',
+                correct: false
+            },
+            {
+                text: 'venom',
+                correct: false
+            },
         ]
     },
     {
         question: 'What is the first rule of Fight Club?',
-        answers: [{
-            text: 'You do not talk about Fight Club.',
-            correct: true
-        },
-        {
-            text: 'have a glass of water',
-            correct: false
-        },
-        {
-            text: 'eat nothing but chicken',
-            correct: false
-        },
-        {
-            text: 'sleep for 3 hours before the fight',
-            correct: false
-        }
+        answers: [
+            {
+                text: 'You do not talk about Fight Club.',
+                correct: true
+            },
+            {
+                text: 'have a glass of water',
+                correct: false
+            },
+            {
+                text: 'eat nothing but chicken',
+                correct: false
+            },
+            {
+                text: 'sleep for 3 hours before the fight',
+                correct: false
+            }
         ]
     }
 ];
