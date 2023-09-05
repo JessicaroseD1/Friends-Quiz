@@ -66,6 +66,7 @@ p {
     /* I want this to be in the middle of the question container ask Mentor perhaps*/
     padding: 1%;
     border-radius: 10px;
+    /* Make this justified and centred */
 }
 
 .hide {
